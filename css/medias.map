@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/medias.css",
+	"sources": [
+		"../scss/medias.scss"
+	],
+	"sourcesContent": [
+		"@mixin responsive($smallerValue,$biggerValue) {\r\n  @media (min-width: $smallerValue) and (max-width: $biggerValue) {\r\n    @content;\r\n  }\r\n}\r\n\r\n"
+	],
+	"mappings": "",
+	"names": []
+}

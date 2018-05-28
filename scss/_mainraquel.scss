@@ -1,0 +1,14 @@
+@import '_configs.scss';
+@import 'medias.scss'; 
+@import 'menu_scroll.scss';
+@import 'hero.scss';
+@import 'mapa_form_entrega';
+
+html{
+	margin-top:0;
+}
+body {
+	height:100%;
+	margin:0 auto;
+	font-family: 'Helvetica';
+}

@@ -1,0 +1,62 @@
+/* line 1, C:/dev/rb-mini-site/scss/menu_scroll.scss */
+header {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  left: 10px;
+}
+
+/* line 7, C:/dev/rb-mini-site/scss/menu_scroll.scss */
+header .vertical_menu_container {
+  margin: 0 auto;
+}
+
+/* line 11, C:/dev/rb-mini-site/scss/menu_scroll.scss */
+header .vertical_menu_container ul li {
+  height: 40px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+/* line 15, C:/dev/rb-mini-site/scss/menu_scroll.scss */
+header .vertical_menu_container ul li div {
+  display: block;
+  transform: rotate(45deg);
+  width: 18px;
+  height: 18px;
+  border: 1px solid red;
+  margin-top: 6px;
+}
+
+/* line 22, C:/dev/rb-mini-site/scss/menu_scroll.scss */
+header .vertical_menu_container ul li div.menu_blue {
+  border: 1px solid blue;
+}
+
+/* line 24, C:/dev/rb-mini-site/scss/menu_scroll.scss */
+header .vertical_menu_container ul li div.menu_blue.menuIsActive {
+  background: blue;
+}
+
+/* line 29, C:/dev/rb-mini-site/scss/menu_scroll.scss */
+header .vertical_menu_container ul li .menu_item {
+  text-transform: uppercase;
+  display: none;
+  line-height: 1.5;
+  font-size: 14px;
+  color: blue;
+  margin: -18px 0 0 30px;
+}
+
+/* line 38, C:/dev/rb-mini-site/scss/menu_scroll.scss */
+header .vertical_menu_container ul li:hover .menu_item {
+  display: block;
+}
+
+/* line 48, C:/dev/rb-mini-site/scss/menu_scroll.scss */
+.menuIsActive {
+  background: red;
+}
+
+/*# sourceMappingURL=../css/menu_scroll.map */

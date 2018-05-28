@@ -1,0 +1,99 @@
+.grafico_energia {
+	width: 100%;
+	height: 980px;
+	position: relative;
+	z-index: 99999;
+	display: none;
+	background-color: $azulEscuro;
+	&.open{
+		right:0;
+	}
+	h1{
+		font-weight: bold;
+		font-size: 64px;
+		text-align: left;
+		color: $vermelho;
+		line-height: 1.1;
+		text-transform: uppercase;
+		letter-spacing: 7px;
+		z-index: 2;
+		position: absolute;
+		top: 5%;
+		left: 19%;
+		width: 40%;
+		span{
+			color: $azulClaro;
+		}
+		@include responsive(0px, 1024px) {
+			width: 50%;
+		}
+		@include responsive(0px, 768px) {
+			font-size: 55px;
+			width: 65%;
+			left: 7%;
+			top: 10%;
+		}
+		@include responsive(0px, 635px) {
+			font-size: 40px;
+			width: 51%;
+		}
+		@include responsive(0px, 512px) {
+			font-size: 38px;
+			width: 59%;
+		}
+		@include responsive(0px, 425px) {
+			font-size: 36px;
+			width: 85%;
+		}
+	}
+	a {
+	 	position: absolute;
+	 	z-index: 10;
+	 	width: 0;
+		height: 0;
+		border-top: 20px solid transparent;
+		border-right: 20px solid $azulClaro;
+		border-bottom: 20px solid transparent;
+	    top: 3%;
+	    left: 2%;
+	}
+	.section_img {
+		.grafico {
+			position: absolute;
+			width: 68%;
+			left: 31%;
+			top: 35%;
+			@include responsive(0px, 768px) {
+		    	top: 41%;
+			}
+			@include responsive(0px, 598px) {
+		    	top: 67%;
+    			left: 25%;
+    			width: 75%;
+			}
+			@include responsive(0px, 480px) {
+		    	top: 60%;
+    			left: 10%;
+    			width: 84%;
+			}
+			@include responsive(0px, 400px) {
+		    	top: 56%;
+    			left: 10%;
+    			width: 90%;
+			}
+		}
+		.triangulo_5 {
+			position: absolute;
+			width: 34%;	
+		    top: 36%;
+		    @include responsive(0px, 768px) {
+				width: 44%;	
+		    	top: 41%;
+			}
+			@include responsive(0px, 598px) {
+				width: 52%;	
+		    	top: 29%;
+			}
+		}
+	}
+}

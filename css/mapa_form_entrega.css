@@ -1,0 +1,86 @@
+/* line 1, C:/dev/rb-mini-site/scss/mapa_form_entrega.scss */
+.mapa_form_entrega {
+  height: 700px;
+  position: relative;
+  background-color: azul;
+}
+
+/* line 5, C:/dev/rb-mini-site/scss/mapa_form_entrega.scss */
+.mapa_form_entrega h1 {
+  text-transform: uppercase;
+  display: block;
+  width: 26%;
+  text-align: left;
+  position: absolute;
+  left: 15%;
+  font-size: 39px;
+  top: 22px;
+  color: red;
+  line-height: 1.5;
+  font-weight: bold;
+  /*@include responsive(0,1010px) {
+			font-size: 38px;
+		    top:33px
+		}	
+		@include responsive(0,900px) {
+			width: 80%;
+		    text-align: center;
+		    position: absolute;
+		    left: 130px;
+		    font-size: 38px;
+		    top: 0;
+		}	
+		
+		@include responsive(0,660px) {
+			left:100px; 
+		}
+    	@include responsive(0,500px) {
+			top:35px;
+	    	font-size:30px;	   
+		}*/
+}
+
+/* line 38, C:/dev/rb-mini-site/scss/mapa_form_entrega.scss */
+.mapa_form_entrega .mapa_pontos_entregas {
+  /*@include responsive(0,720px) {
+		}
+		
+		@include responsive(0,500px) {
+			
+		    top: 212px;
+		    height: 316px;
+		    width: 64%;	   
+		}*/
+}
+
+/* line 40, C:/dev/rb-mini-site/scss/mapa_form_entrega.scss */
+.mapa_form_entrega .mapa_pontos_entregas img {
+  right: 0;
+  top: 245px;
+  height: 445px;
+  width: 85%;
+  position: absolute;
+  /*@include responsive(0,900px) {
+				width: 87%;
+			    top: 135px;
+			}
+			@include responsive(0,660px) {
+				top: 190px;
+			    width: 80%;
+			    height: 470px;  
+			}*/
+}
+
+/* line 66, C:/dev/rb-mini-site/scss/mapa_form_entrega.scss */
+.mapa_form_entrega a {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 30px solid transparent;
+  border-right: 30px solid blue;
+  border-bottom: 30px solid transparent;
+  top: 26px;
+  left: 25px;
+}
+
+/*# sourceMappingURL=../css/mapa_form_entrega.map */

@@ -1,0 +1,45 @@
+.ponto_venda_mobile{
+	margin-top: 50px;
+	display:none;
+	width: 100%;
+	cursor: pointer;
+	&.desaparece{
+		display: none;
+	}
+	@include responsive(0px, 1100px) {
+		display:block;
+	}
+	.botao{
+		width:40%;
+	    height: 0; 
+	    padding-bottom: 40%; 
+	    position: relative;
+	    top: 50px;
+	    box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.5);
+	    background-color:$vermelho;
+	    transform: rotate(45deg);
+	    margin:auto;
+	    &:hover{
+	    	box-shadow: 0 6px 4px 0 rgba(0, 0, 0, 0.8);
+	    }
+	    &:before{
+	    	transform: translate(-50%,-50%) rotate(-45deg);
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			content:'NÃO TENHO PONTOS DE VENDA PERTO DE MIM';
+			font-family: 'FuturaCom-Bold', sans-serif;
+			font-size: 28px;
+			text-align: center;
+			color: $azulEscuro;
+			cursor: pointer;
+			@include responsive(0px, 512px) {
+				font-size: 18px;
+			}
+	    }
+	}
+}	
+
+
+
+ 

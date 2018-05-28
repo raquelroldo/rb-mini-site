@@ -1,0 +1,118 @@
+.video_influencer{
+	position:relative;
+	width:100%;
+	background-color:$azulEscuro;
+	z-index:999999;
+	h1{
+		position:absolute;
+		font-size: 72px;
+		font-weight: bold;
+		letter-spacing: 7px;
+		text-align: left;
+		color: #e21b4d;
+		text-transform: uppercase;
+		top:-100px;
+		margin-left: 20%;
+		@include responsive(0, 319px) {
+			font-size: 28px;
+			margin-left: 5%;
+		} 
+		@include responsive(320px, 512px) {
+			font-size: 30px;
+			margin-left: 5%;
+			letter-spacing: 5px;
+		} 
+		@include responsive(513px, 980px) {
+			font-size: 46px;
+			margin-left: 10%;
+		} 
+		@include responsive(981px, 1200px) {
+			font-size: 58px;
+		}
+	}
+	.video{
+		#bg{
+			width:100%;
+			height:100%;
+			position:relative;	
+		}
+		#overlay{
+			height:100vh;
+			width:100%;
+			background:rgba(15,0,105,0.5);
+			position:relative;
+			display:none;
+			.movie{
+			width:100%;
+		    height:100vh;
+		    transform:translate(-50%, -50%);
+		    position:relative;
+		    top:50%;
+		    left:50%;
+		   		iframe{
+		   			transform:translate(-50%, -50%);
+		    		position:relative;
+		    		top:50%;
+		    		left:50%;
+		   		}
+			}
+		}
+	}
+	#bg2{
+		cursor:pointer;	
+		.blue{
+			position:absolute;
+			left:50%;
+			top:50%;
+			transform:translate(-50%,-50%); 
+			width:200px;
+			@include responsive(1400px, 2000px) {
+			width:150px;
+			} 
+			@include responsive(1024px, 1399px) {
+			width:120px;
+			} 
+			@include responsive(512px, 1023px) {
+			width:100px;
+			} 
+			 @include responsive(320px, 511px) {
+			width:80px;
+			} 
+			 @include responsive(0, 319px) {
+			width:40px;
+			} 
+		}
+		.red{
+			position:absolute;
+			left:50%;
+			top:50%;
+			transform:translate(-50%,-50%); 
+			width:200px;
+			display:none;		
+			@include responsive(1400px, 2000px) {
+			width:150px;
+			} 
+			@include responsive(1024px, 1399px) {
+			width:120px;
+			} 
+			@include responsive(512px, 1023px) {
+			width:100px;
+			} 
+			 @include responsive(320px, 511px) {
+			width:80px;
+			} 
+			 @include responsive(0, 319px) {
+			width:40px;
+			} 
+		}
+		&:hover{
+			.blue{
+				display:none;
+			}
+			.red{
+				display:block;
+			}
+		}
+	}
+}
+

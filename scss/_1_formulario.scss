@@ -1,0 +1,176 @@
+.formulario3{
+	position: relative;
+	width: 100%;
+	height:100%;
+	display: none;
+	z-index:999999;
+	&.mostrar{
+		display: block;
+	}
+	a{
+		margin: 50px;
+		cursor: pointer;
+		display: block;
+	    text-decoration: none;
+	    width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 23px 46px 23px 0;
+		border-color: transparent $azulClaro transparent transparent;
+		@include responsive(0px,512px) {
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 8px 16px 8px 0;
+			border-color: transparent $azulClaro transparent transparent;
+		} 
+	}
+	h2{
+		width: 305px;
+		font-size: 45px;
+		z-index: 2;
+		letter-spacing: 7px;
+		text-align: right;
+		color: $vermelho;
+		text-transform: uppercase;
+		position: absolute;
+		top:20px;
+		right: 7%;
+	}
+	#quadrado3{
+		width: 139%;
+	    height: 0;
+	    padding-bottom: 139%;
+	    left: -37%;
+	    position: absolute;
+	    top: 177px;
+	    img{
+	    	display: block;
+	    	width: 100%;
+	    	height: auto;
+	    }
+	}
+	#quadrado2{
+		width: 100%;
+	    height: 0; /* A mágica está aqui */
+	    padding-bottom: 100%; /* ... e está aqui */
+	    left: -5%;
+	    transform: rotate(45deg);
+	    position: absolute;
+	    top: 260px;
+	    opacity: 0.8;
+		background-color: #e21b4d;
+	}
+	#quadrado1{
+		width: 100%;
+		height: 0; 
+		padding-bottom: 100%; 
+	    left: -28%;
+	    transform: rotate(45deg);
+	    position: absolute;
+	    top: 260px;
+	    background-color: #BCAFA4;
+	    opacity: 0.2;  
+	}
+	.form_entrega_wrapper3{
+		width: 100%;
+		height: auto;
+		form{
+			position: absolute;
+			top: 360px;
+			box-sizing: border-box;
+			max-width: 1280px;
+			margin:0 auto;
+			text-align: center;
+			width: 340px;
+			left: 50%;
+			transform: translateX(-50%);
+			h1{
+				font-size: 24px;
+				letter-spacing: -0.1px;
+				color: $azulEscuro;
+				padding-bottom: 20px;
+				text-align: left;
+				text-transform: uppercase;
+			}
+			.nome{
+				width: 100%;
+				height: 55px;
+				margin-bottom: 20px;
+				text-align: left;
+				padding: 10px 20px;
+				background-color: $azulEscuro; 
+				position: relative;
+				h3{
+					color:#FFF;
+					font-size: 15px;
+					line-height: 35px;
+					position: relative;
+					z-index: 1;
+					width: 40px;
+				}
+				#nome{
+					position: absolute;
+					right: 0;
+					top: 0;
+					height: 55px;
+					border:0;
+					background-color: $azulEscuro;  
+					color:#FFF;
+					width: 100%;
+					font-size: 15px;
+					padding-left: 124px;
+				}
+				#email{
+					position: absolute;
+					right: 0;
+					top: 0;
+					height: 55px;
+					border:0;
+					background-color: $azulEscuro; 
+					color:#FFF;
+					width: 100%;
+					font-size: 15px;
+					padding-left: 124px;	
+				}
+			}
+			#enviar2{
+				position: absolute;
+				top: 259px;
+    			right: 8%;
+				width: 110px;
+				height: 110px;
+				transform: rotate(45deg);
+				font-size: 36px;
+				color: $azulEscuro;
+				background-color: $vermelho;
+				border: 0;
+				box-shadow: 0 14px 4px 0 rgba(0, 0, 0, 0.5);
+				&:before{
+					transform: translate(-50%,-50%) rotate(-45deg);
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					content:'OK!';
+					font-family: 'FuturaCom-Bold', sans-serif;
+					font-size: 36px;
+					text-align: center;
+					color: $azulEscuro;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+::placeholder {
+	color: #FFF;
+	opacity: 2; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #FFF;
+	opacity: 2;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+	color: #FFF;
+	opacity: 2;
+}

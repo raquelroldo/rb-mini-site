@@ -1,0 +1,53 @@
+@import '_configs';
+@import '_reset';
+@import '_mixin';
+@import '_font';
+@import '_menu_scroll';
+@import '_hero';
+@import '_energy_counter';
+@import '_energy_counter_1';
+@import '_video_influencer';
+@import '_formulario_entrega';
+@import '_2fase_formulario';
+@import '_1_formulario';
+@import 'input_autofill_change';
+@import '_mapa_ponto_venda';
+@import '_mapa_ponto_venda_mobile';
+@import '_pedir_ponto_venda';
+@import '_video_influencer';
+@import '_mapa_consumo';
+@import '_chart';
+@import '_footer';
+
+
+
+
+
+html {
+  background-color:$azulEscuro;
+  position: relative;
+  height: 100%;
+}
+body {
+  font-family: 'FuturaCom-Bold', sans-serif;
+  position: relative;
+  height: 100%;
+ 	::-webkit-scrollbar {
+	    width: 15px;
+	    float:right;
+	}
+	/* Track */
+	::-webkit-scrollbar-track {
+	   
+	    border:none;
+	}
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+	    background:$cinza; 
+	    border-radius: 10px;
+	}
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+	    background: $cinza; 
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/hero.css",
+	"sources": [
+		"../scss/hero.scss"
+	],
+	"sourcesContent": [
+		"\r\n.hero {\r\n\t//height:100%;\r\n\t//width:100%;\r\n\tbackground-image: url(../images/hero.png);\r\n\theight: 1000px;\r\n  \tbackground-position: center;\r\n  \tbackground-repeat: no-repeat;\r\n  \tbackground-size: cover;\r\n  \tposition: relative;\r\n\tbackground-color:red;\r\n\t//font-size:0;\r\n\t\r\n\t.scroll_gif {\r\n\t   \tposition: absolute; \r\n\t    width: 95px;\r\n\t    height: 70px;\r\n\t    left: 50%;\r\n\t    transform: translate(-50%);\r\n\t\ttop: 90%;\r\n\r\n\t}\r\n\t\r\n\th1 {\r\n\t\ttext-transform:uppercase;\r\n\t\ttext-align:left;\r\n  \t\tposition: absolute;\r\n  \t\ttop: 50%;\r\n  \t\tleft: 50%;\r\n  \t\tcolor:red;\r\n  \t\tfont-size:50px;\r\n  \t\ttransform: translate(-50%, -50%);\r\n\t\t/*display:block;\r\n\t\t\r\n\t\tposition:absolute;\r\n\t\tleft:135px;\r\n\t\twidth:260px;\r\n\t\t\r\n\t\ttop:406px;\r\n\t\tcolor:$vermelho;\r\n\t\t@include responsive(0,1150px) {\r\n\t\t\tfont-size:40px;\r\n\t\t\ttop:360px;\r\n\t\t}\t\r\n\t\t@include responsive(0,1000px) {\r\n\t\t\tfont-size:37px;\r\n\t\t\ttop:270px;\r\n\t\t\t\r\n\t\t}\t\r\n\t\t@include responsive(0,800px) {\r\n\t\t\tfont-size: 29px;\r\n\t\t    top: 235px;\r\n\t\t    left: 95px;\r\n\t\t    width:180px;\r\n\t\t}\t\r\n\t\t@include responsive(0,670px) {\r\n\t\t\tfont-size: 28px;\r\n\t\t    top: 355px;\r\n\t\t    left: 43%;\r\n\t\t    width:100%;\r\n\t\t}\t*/\r\n\r\n\t}\r\n\t\r\n\t\r\n\t/*img {\r\n\t\twidth:100%;\r\n\t\theight:100vh;\r\n\t\tbackground-size:cover;\r\n\r\n\t\t@include responsive(0,670px) {\r\n\t\t\twidth:150%;\r\n\t\t}\r\n\t}*/\r\n}\r\n"
+	],
+	"mappings": ";AACA,AAAA,KAAK,CAAC;EAGL,gBAAgB,EAAwB,uBAAC;EACzC,MAAM,EAAE,MAAO;EACb,mBAAmB,EAAE,MAAO;EAC5B,iBAAiB,EAAE,SAAU;EAC7B,eAAe,EAAE,KAAM;EACvB,QAAQ,EAAE,QAAS;EACrB,gBAAgB,EAAC,GAAI;EAuDrB;;;;;;;;IAQG;CACH;;;AAzED,AAYC,KAZI,CAYJ,WAAW,CAAC;EACR,QAAQ,EAAE,QAAS;EACnB,KAAK,EAAE,IAAK;EACZ,MAAM,EAAE,IAAK;EACb,IAAI,EAAE,GAAI;EACV,SAAS,EAAE,eAAS;EACvB,GAAG,EAAE,GAAI;CAET;;;AApBF,AAsBC,KAtBI,CAsBJ,EAAE,CAAC;EACF,cAAc,EAAC,SAAU;EACzB,UAAU,EAAC,IAAK;EACd,QAAQ,EAAE,QAAS;EACnB,GAAG,EAAE,GAAI;EACT,IAAI,EAAE,GAAI;EACV,KAAK,EAAC,GAAI;EACV,SAAS,EAAC,IAAK;EACf,SAAS,EAAE,qBAAS;EACtB;;;;;;;;;;;;;;;;;;;;;;;;;;;;MA4BI;CAEJ",
+	"names": []
+}

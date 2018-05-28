@@ -1,0 +1,67 @@
+.mapa_consumo{
+	position:relative;
+ 	height:475px;
+ 	background-color: $azulEscuro;
+ 	z-index: 9999999;
+	display: none;
+ 	&.open{
+		right:0;
+		display: block;
+	}
+	@include responsive(513px,965px) {
+		height:625px;
+	}
+ 	#mapa_seta{
+	 	position: absolute;
+	 	z-index: 10;
+	 	width: 0;
+		height: 0;
+		border-top: 20px solid transparent;
+		border-right: 20px solid $azulClaro;
+		border-bottom: 20px solid transparent;
+		top: 7%; 
+		left: 2%;
+	}
+	h1{
+		font-size: 50px;
+		line-height: 1.5;
+		letter-spacing: 5px;
+		text-align: left;
+		color: $vermelho;
+		text-transform: uppercase;
+		font-weight: 700;
+		position: relative;
+	    left: 15%;
+	    width: 40%;
+	   	top: 25%;
+	    @include responsive(0,965px) {
+			width: 60%;
+			top: 7%;
+		}
+		@include responsive(0,650px) {
+			width: 80%;
+			font-size:50px;
+		}
+		@include responsive(0,481px) {
+			width: 80%;
+			font-size: 30px;
+		}
+	}
+	.mapa_pontos{
+	 	#map2{
+	 		top: 120px;
+	 		margin-bottom:0;
+	        height:511px;
+	        width:75%;
+	        position:relative;
+	        left: 25%;
+
+	        @include responsive(0,650px) {
+				width: 88%;
+				left: 11%;
+				height: 450px;
+				top: 80px;
+			}
+	    }   
+	} 
+}

@@ -1,0 +1,256 @@
+ .mapa_ponto_venda{
+ 	font-size: 0;
+ 	padding-top:30%;
+ 	width:100%;
+ 	@include responsive(0, 480px) {
+		padding-top:0;
+	} 
+ 	&.desaparece{
+		display: none;
+	}
+	.mapa_ponto{
+	 	width:55%;
+		margin-top: 110px;
+		padding: 0;
+		position:relative;
+ 		display: inline-block;
+ 		padding-left:10%;
+ 		@include responsive(513px, 1100px) {
+			width: 100%;
+			padding-left: 0;
+			margin-top: 0;
+		} 	
+		@include responsive(0px, 770px) {
+			width: 100%;
+			padding-left:0;
+			top: 180px;
+		} 
+ 		 @include responsive(0px, 512px) {
+			width: 100%;
+			padding-left:0;
+			top: 200px;
+		} 
+		h1{
+			font-size:50px;
+			line-height:100px;
+			letter-spacing:7px;
+			text-align:left;
+			color:$vermelho;
+			text-transform:uppercase;
+			font-weight:700;
+			margin-left:65px;
+			
+			@include responsive(1400px, 1800px) {
+				font-size:45px;
+				font-weight:650;
+				line-height:90px;
+				letter-spacing:6px;
+			} 
+			@include responsive(1101px, 1399px) {
+				font-size:40px;
+				font-weight:600;
+				line-height:80px;
+				letter-spacing:5px;
+				margin-top:25px;
+			} 
+			@include responsive(601px, 1100px) {
+				font-size:35px;
+				font-weight:550;
+				line-height:70px;
+				letter-spacing:4px;
+			} 
+			@include responsive(0px, 950px) {
+				font-size:36px;
+				font-weight:600;
+				line-height:60px;
+				letter-spacing:5px;
+			} 
+		}
+		h2{
+			font-size:42px;
+			letter-spacing:7px;
+			text-align:left;
+			color:$azulClaro;
+			text-transform:uppercase;
+			margin-left:65px;
+
+			@include responsive(1400px, 1800px) {
+				font-size:38px;
+				font-weight:500;
+				letter-spacing:6px;
+			} 
+			@include responsive(1101px, 1399px) {
+				font-size:32px;
+				font-weight:450;
+				letter-spacing:5px;
+			} 
+			@include responsive(601px, 1100px) {
+				font-size:28px;
+				font-weight:400;
+				letter-spacing:4px;
+			} 
+			@include responsive(0px, 600px) {
+				font-size:30px;
+				font-weight:500;
+				width:70%;
+				letter-spacing:4.4px;
+				margin-top:20px;
+			} 
+		}
+	 	#map{
+		 		margin-top:60px;
+		 		margin-bottom:0;
+		        height:511px;
+		        width:100%;
+		        position:relative;
+	        @include responsive(0px, 950px) {
+ 				height:350px;
+			} 
+	    }
+	    .glovo{
+	    	width: 75%;
+ 			height: 84px;
+ 			background-color: #00a083;
+ 			border:none;
+ 			position: absolute;
+ 			bottom: -121px;
+    		img{
+    			height: 50%;
+    			border:none;
+    			margin-bottom:1%;	
+    		}
+    		@include responsive(0px, 1100px) {
+				display: none;
+			} 	
+    	}
+	}
+    .info{
+	    display: inline-block;
+	   	padding-left: 50px;
+	   	position: relative;
+		@include responsive(0px, 1100px) {
+			padding-left: 0;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+			padding-top: 50px;
+		} 
+		@include responsive(0px, 480px) {
+			padding-top: 220px;
+		} 
+		.pedir{
+			width: 479px;
+			height: 84px;
+	   		font-size: 24px;
+			letter-spacing: 3.5px;
+			text-align: center;
+			color: $azulEscuro;
+ 			background-color:$cinza;
+ 			border:none;
+ 			text-transform:uppercase;
+ 			position: absolute;
+    		left: -20px;
+    		bottom: -120px;
+    		@include responsive(0px, 1100px) {
+				display: none;
+			} 	
+	    }
+    	div{
+	    	h3{
+	    		width:418px;
+	    		font-size:36px;
+				letter-spacing:7px;
+				text-align:left;
+				color:$vermelho;
+				text-transform:uppercase;
+				margin-top:20px;
+				@include responsive(0px, 415px) {
+					width:342px;
+					text-align: center;
+					margin:20px 0px;
+				}	
+				@include responsive(0px, 1100px) {
+					width:342px;
+					text-align: center;
+					margin:60px 0px;
+				}	
+	    	}
+	    	input{
+	    		width:422px;
+	    		height:49px;
+	    		background-color:rgba(255, 255, 255, 0.2);
+	    		border:none;
+	    		margin-bottom:40px;
+	    		color:$cinza;
+	    		font-size:20px;	
+	    		@include responsive(0px, 415px) {
+					width:342px;
+					margin: 0 auto;
+					display: block;
+				}	
+	    	}
+	    }
+    	.pin_imagens{
+    		position:relative;
+       		height:513px;
+       		width:418px;
+       		border:2px dashed $vermelho;
+       		@include responsive(0px, 415px) {
+				width:342px;
+				margin: 0 auto;
+				display: block;
+				overflow: hidden;
+			}
+    		ul{	
+       			width:422px;
+       			height:508px;	
+       			overflow:auto;
+    			li{ 
+    				.img_icon{ 
+    					width:20px;
+	    				img{
+	    					height:85px;
+	    					position:relative;
+	    					float:left;
+	    					margin-bottom:70px;
+	    					margin-left:20px;
+	    				}
+	    			}
+	    			.text_icon{
+	    				width:305px;
+	    				position:relative;
+	    				margin-left:99px;		
+	    				h4{
+	    					float:left;
+	    					font-size:28px;
+	    					color:$vermelho;
+	    					line-height:40px;
+	    					width:305px;
+	    					font-weight:600;
+	    				}
+	    				p{
+	    					float:left;
+	    					font-size:18px;
+	    					line-height:20px;
+	    					color:$cinza;
+	    					width:305px;
+	    					span{
+	    						float:left;
+	    						font-size:13px;
+	    						line-height:30px;
+	    						color:$cinza;
+	    						width:305px;
+	    					}
+	    				}
+	    			}
+	    			&:nth-child(1){
+					margin-top:30px;
+					}
+					&:nth-child(10){
+					margin-bottom:30px;
+					}
+    			}
+    		}
+    	}
+    }
+}

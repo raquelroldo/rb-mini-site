@@ -1,0 +1,337 @@
+.form_entrega{
+	background-color: $azulEscuro;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	&.desaparece{
+		display: none;
+	}
+	.quadrados{
+		position: relative;
+		max-width: 1280px;
+		margin: 0 auto;
+		#quadrado1{
+			width: 48%;
+		    height: 0; /* A mágica está aqui */
+		    padding-bottom: 48%; /* ... e está aqui */
+		    left: 23%;
+		    transform: rotate(45deg);
+		    position: absolute;
+		    top: 60px;
+		    background-color: #BCAFA4;
+		    opacity: 0.2;
+		    @include responsive(0px, 512px) {
+				display: none;
+			}   
+		}
+		#quadrado2{
+			width: 48%;
+		    height: 0; /* A mágica está aqui */
+		    padding-bottom: 48%; /* ... e está aqui */
+		    left: 30%;
+		    transform: rotate(45deg);
+		    position: absolute;
+		    top: 65px;
+		    background-color: #26377b;
+		    opacity: 0.8;
+			background-color: rgba(188, 175, 164, 0.2);
+		    z-index: 7;
+		    &:after{
+		    	content:'';
+		    	cursor:pointer;
+				width: 110.6px;
+				height: 110.6px;
+				background-color: $vermelho;
+				text-align: center;
+				line-height: 110.6px;
+				transform: rotate(90deg) translateX(-50%);
+				display: none;
+				left:75%;
+				position: absolute;
+				-webkit-box-shadow: 10px -6px 18px -6px rgba(0,0,0,0.68);
+				-moz-box-shadow: 10px -6px 18px -6px rgba(0,0,0,0.68);
+				box-shadow: 10px -6px 18px -6px rgba(0,0,0,0.68);
+				@include responsive(0px, 512px) {
+					display: block;
+					top: 100%;
+					cursor:pointer;
+				}
+			}
+			&:before{
+				width: 110.6px;
+				height: 110.6px;
+				transform: rotate(-45deg);
+			    position: absolute;
+			    top: 90%;
+    			left: 86%;
+			    content: 'OK!';
+			    font-family: 'FuturaCom-Bold', sans-serif;
+			    font-size: 30px;
+			    font-weight: bold;
+			    text-align: center;
+			    color: #001a71;
+			    z-index: 999;
+			    cursor: pointer;
+			    @include responsive(513px, 5120px) {
+					display: none;
+				} 
+			}  
+		     @include responsive(0px, 512px) {
+				width: 58%;
+			    height: 0; 
+			    padding-bottom: 58%; 
+			    left: 20%;
+			    background-color: #26377b;
+			} 
+		}
+		#quadrado3{
+			width: 67%;
+		    height: 0; 
+		    padding-bottom: 67%; 
+		    left: 50%;
+		    transform: translateX(-50%) ;
+		    position: absolute;
+		    top: -50px;
+		    img{
+		    	display: block;
+		    	width: 100%;
+		    	height: auto;
+		    	@include responsive(0px, 512px) {
+					display: none;
+				}
+		    }
+		    @include responsive(513px, 768px) {
+				top: 0px;
+			}
+		}
+		#quadrado4{
+			width: 48%;
+		    height: 0; 
+		    padding-bottom: 48%; 
+		    left: 20%;
+		    transform: rotate(45deg);
+		    position: absolute;
+		    top:57px;
+		    background-color: transparent;
+		    border-left:3px dotted $vermelho;
+		    border-bottom:3px dotted $vermelho;
+		    opacity: 0.7;
+		    @include responsive(0px, 512px) {
+				left: 12%;
+			    transform: rotate(45deg);
+			    position: absolute;
+			    top: 84px;
+			}
+		}
+		.quadrado5{
+		    position: absolute;
+		    left: 50%;
+		    transform: translateX(-50%);
+		    z-index: 9;
+		    .quadrados_container{
+		    	margin: 40% auto;
+		    	padding: 5px;
+		    	@include responsive(0px, 400px) {
+					margin: 32% auto;
+				}
+				@include responsive(401px, 512px) {
+					margin: 37% auto;
+				}
+				@include responsive(513px, 764px) {
+					margin: 39% auto;
+				}
+				@include responsive(765px, 1024px) {
+					margin: 30% auto;
+				}
+		    }
+			h1{
+				font-size: 40px;
+				letter-spacing: 7px;
+				text-align: center;
+				color: $vermelho;
+				text-transform: uppercase;
+				text-align: center;
+				margin-top: 35px;
+				@include responsive(0px, 764px) {
+					font-size: 18px;
+				}
+				@include responsive(765px, 980px) {
+					font-size: 23px;
+				}
+				span{
+					font-size: 92px;
+					@include responsive(0px, 764px) {
+						font-size: 51px;
+					}
+					@include responsive(765px, 980px) {
+						font-size: 60px;
+					}
+				}
+			}
+			h2{
+				font-size: 48px;
+				color: $azulClaro;
+				text-transform: uppercase;
+				text-align: center;
+				margin-top:  50px;
+				letter-spacing: 7px;
+				@include responsive(0px, 764px) {
+					font-size: 18px;
+					margin-top:8px;
+				}
+				@include responsive(765px, 1024px) {
+					margin-top:12px;
+				}
+				@include responsive(765px, 980px) {
+					font-size: 40px;
+				}
+			}
+			h3{
+				font-family: 'Helvetica';
+				font-size: 36px;
+				font-weight: bold;
+				letter-spacing: -0.2px;
+				text-align: center;
+				color: #fff;
+				text-transform: uppercase;
+				margin-top: 15px;
+				@include responsive(0px, 512px) {
+					display: none;
+				}
+				@include responsive(513px, 764px) {
+					font-size: 24px;
+				}
+				@include responsive(765px, 980px) {
+					font-size: 28px;
+				}
+			}
+		}
+	}
+	#lateral_direito{
+		position: absolute;
+		right: 0;
+		height: 83%;
+		width: auto;
+		top: 75%;
+		@include responsive(0px, 512px) {
+			top: 50%;
+		}
+	}
+	#lateral_esquerdo{
+		position: absolute;
+		top: 87%;
+		width: 30%;
+		left: 0;
+		@include responsive(0px, 512px) {
+			top: 98%
+		}
+	}
+	.formulario{
+	position: relative;
+	z-index: 99999;
+	top: 115%;
+	margin-bottom:140px;
+	@include responsive(0px, 512px) {
+		display: none;
+	}
+	@include responsive(513px, 612px) {
+		top: 65%;
+	}
+	@include responsive(613px, 768px) {
+		top: 62%;
+	}
+	@include responsive(769px, 980px) {
+		top: 62%;
+	}
+	@include responsive(981px, 1024px) {
+		top: 61%;
+	}
+	.form_entrega_wrapper{
+		box-sizing: border-box;
+		max-width: 1280px;
+		margin: 0 auto;
+		#formulario1{
+			margin:0 auto;
+			text-align: center;
+			width: 340px;
+			.nome{
+				width: 100%;
+				height: 55px;
+				margin-bottom: 20px;
+				text-align: left;
+				padding: 10px 20px;
+				background-color: $vermelho;
+				position: relative;
+				h3{
+					color:$branco;
+					font-size: 15px;
+					line-height: 35px;
+					font-style: 'Helvetica', sans-serif;
+				}
+				#nome{
+					position: absolute;
+					right: 0;
+					top: 0;
+					height: 55px;
+					border:0;
+					background-color: $vermelho;
+					color:$branco;
+					width: 75%;
+					font-size: 15px;
+					padding-left: 40px;	
+				}
+				#email{
+					position: absolute;
+					right: 0;
+					top: 0;
+					height: 55px;
+					border:0;
+					background-color: $vermelho;
+					color:$branco;
+					width: 75%;
+					font-size: 15px;
+					padding-left: 40px;	
+				}
+			}
+			::placeholder {
+				color: #FFF;
+				opacity: 2; /* Firefox */
+			}
+			:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			   color: #FFF;
+			   opacity: 2;
+			}
+
+			::-ms-input-placeholder { /* Microsoft Edge */
+			   color: #FFF;
+			   opacity: 2;
+			}
+				#email{
+					width: 100%;
+					height: 55px;
+					padding: 20px;
+					margin-bottom: 20px;
+					background-color: $vermelho;
+					border:0;
+					color: $branco;
+					font-size: 15px;
+				}
+				#enviar{
+					border: none;
+				    color: $azulEscuro;
+				    padding: 16px 32px;
+				    text-decoration: none;
+				    margin: 4px 2px;
+				    background-color: $branco;
+				    text-transform: uppercase;
+				    width: 100%;
+				    font-size: 15px;
+				}
+			}
+		}
+	}
+}
+
+
+
+	
